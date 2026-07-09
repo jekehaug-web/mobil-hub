@@ -2,6 +2,8 @@
 
 Én hjemskjerm-side med snarveier til **Privatlærer**, **NDT Portalen** og **Galleri Uthuset**, pluss utviklingsverktøy.
 
+**Arbeidsflyt alle PC-er:** [WORKFLOW.md](../WORKFLOW.md)
+
 ## På Android nå
 
 1. Åpne i Chrome:
@@ -14,8 +16,8 @@
 | Prosjekt | Mappe | App / URL | GitHub |
 |----------|-------|-----------|--------|
 | **Privatlærer** | `C:\Users\Johnn\Projects\privatlaerer` | [Azure](https://polite-coast-08bc95303.7.azurestaticapps.net) | (lokalt) |
-| **NDT Portalen** | `OneDrive\...\NDT Portalen V.0` | [portal.ndtoginsp.no](https://portal.ndtoginsp.no) | [NDT-Portal-v1](https://github.com/jekehaug-web/NDT-Portal-v1) |
-| **Galleri Uthuset** | `OneDrive\...\Galleri_Uthuset` | Streamlit Cloud *(se under)* | [Galleri-Uthuset](https://github.com/jekehaug-web/Galleri-Uthuset) |
+| **NDT Portalen** | `C:\Users\Johnn\Projects\ndt-portalen` | [portal.ndtoginsp.no](https://portal.ndtoginsp.no) | [NDT-Portal-v1](https://github.com/jekehaug-web/NDT-Portal-v1) |
+| **Galleri Uthuset** | `C:\Users\Johnn\Projects\galleri-uthuset` | [Streamlit](https://galleri-uthuset.streamlit.app) | [Galleri-Uthuset](https://github.com/jekehaug-web/Galleri-Uthuset) |
 
 ## Jobbe videre fra telefon
 
@@ -38,7 +40,7 @@ Guide: `docs/MOBIL-ANDROID.md`
 
 ### NDT Portalen
 ```powershell
-cd "C:\Users\Johnn\OneDrive\Documents\Utviklingsprosjekter\NDT Portalen V.0"
+cd C:\Users\Johnn\Projects\ndt-portalen
 git pull origin main
 .\scripts\azure\deploy-aca-staging.ps1
 ```
