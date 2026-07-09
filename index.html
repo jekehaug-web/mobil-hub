@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="nb">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#1e3a5f" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Mine prosjekter</title>
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <style>
+      :root {
+        color-scheme: light dark;
+        --bg: #0f172a;
+        --card: #1e293b;
+        --text: #f8fafc;
+        --muted: #94a3b8;
+        --accent: #38bdf8;
+        --privat: #4f46e5;
+        --ndt: #0ea5e9;
+        --galleri: #d946ef;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100dvh;
+        font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
+        background: radial-gradient(circle at top, #1e3a5f, var(--bg) 55%);
+        color: var(--text);
+        padding: 20px 16px 32px;
+      }
+
+      header {
+        margin-bottom: 24px;
+      }
+
+      h1 {
+        margin: 0 0 6px;
+        font-size: 1.6rem;
+      }
+
+      .lead {
+        margin: 0;
+        color: var(--muted);
+        font-size: 0.95rem;
+        line-height: 1.45;
+      }
+
+      .grid {
+        display: grid;
+        gap: 14px;
+      }
+
+      .card {
+        display: block;
+        background: var(--card);
+        border: 1px solid #334155;
+        border-radius: 16px;
+        padding: 16px;
+        text-decoration: none;
+        color: inherit;
+        transition: transform 0.15s ease, border-color 0.15s ease;
+      }
+
+      .card:active {
+        transform: scale(0.98);
+      }
+
+      .card-head {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 8px;
+      }
+
+      .icon {
+        width: 44px;
+        height: 44px;
+        border-radius: 12px;
+        display: grid;
+        place-items: center;
+        font-size: 1.4rem;
+      }
+
+      .icon.privat {
+        background: #312e81;
+      }
+      .icon.ndt {
+        background: #0c4a6e;
+      }
+      .icon.galleri {
+        background: #701a75;
+      }
+      .icon.dev {
+        background: #14532d;
+      }
+
+      .card h2 {
+        margin: 0;
+        font-size: 1.05rem;
+      }
+
+      .card p {
+        margin: 0;
+        color: var(--muted);
+        font-size: 0.88rem;
+        line-height: 1.4;
+      }
+
+      .tag {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 4px 10px;
+        border-radius: 999px;
+        font-size: 0.75rem;
+        font-weight: 700;
+        background: #0f172a;
+        color: var(--accent);
+      }
+
+      .section-title {
+        margin: 28px 0 10px;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        color: var(--muted);
+      }
+
+      .hint {
+        margin-top: 24px;
+        padding: 14px;
+        border-radius: 12px;
+        background: #172554;
+        border: 1px solid #1d4ed8;
+        font-size: 0.85rem;
+        color: #bfdbfe;
+        line-height: 1.45;
+      }
+
+      .hint strong {
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Mine prosjekter</h1>
+      <p class="lead">Åpne appene fra telefonen. Legg denne siden på hjemskjermen i Chrome.</p>
+    </header>
+
+    <div class="grid">
+      <a class="card" href="https://polite-coast-08bc95303.7.azurestaticapps.net/" rel="noopener">
+        <div class="card-head">
+          <div class="icon privat" aria-hidden="true">📚</div>
+          <div>
+            <h2>Privatlærer</h2>
+            <p>Læringsapp for Mina og Mathea</p>
+          </div>
+        </div>
+        <span class="tag">PWA · Azure</span>
+      </a>
+
+      <a class="card" href="https://portal.ndtoginsp.no/" rel="noopener">
+        <div class="card-head">
+          <div class="icon ndt" aria-hidden="true">🔬</div>
+          <div>
+            <h2>NDT Portalen</h2>
+            <p>Rapporter, sertifikater og kundeportal</p>
+          </div>
+        </div>
+        <span class="tag">Produksjon · portal.ndtoginsp.no</span>
+      </a>
+
+      <a
+        class="card"
+        href="https://galleri-uthuset.streamlit.app/"
+        rel="noopener"
+        id="galleri-link"
+      >
+        <div class="card-head">
+          <div class="icon galleri" aria-hidden="true">🎨</div>
+          <div>
+            <h2>Galleri Uthuset</h2>
+            <p>Verk, salg og statistikk</p>
+          </div>
+        </div>
+        <span class="tag">Streamlit · Google Sheets</span>
+      </a>
+    </div>
+
+    <p class="section-title">Utvikling fra telefon</p>
+    <div class="grid">
+      <a class="card" href="https://cursor.com/agents" rel="noopener">
+        <div class="card-head">
+          <div class="icon dev" aria-hidden="true">⚡</div>
+          <div>
+            <h2>Cursor Agents</h2>
+            <p>Fortsett koding i GitHub-repoene dine</p>
+          </div>
+        </div>
+      </a>
+
+      <a class="card" href="https://github.com/jekehaug-web?tab=repositories" rel="noopener">
+        <div class="card-head">
+          <div class="icon dev" aria-hidden="true">🐙</div>
+          <div>
+            <h2>GitHub</h2>
+            <p>NDT-Portal-v1 · Galleri-Uthuset · m.fl.</p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="hint">
+      <strong>Android:</strong> Chrome → ⋮ → «Legg til på startskjermen». Da har du ett ikon som åpner
+      alle prosjektene.<br /><br />
+      <strong>Galleri:</strong> Hvis Streamlit-lenken ikke virker, oppdater URL i
+      <code>mobil-hub/index.html</code> etter deploy til Streamlit Cloud.
+    </div>
+  </body>
+</html>
