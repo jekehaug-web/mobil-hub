@@ -18,6 +18,7 @@
 | **Privatlærer** | `C:\Users\Johnn\Projects\privatlaerer` | [Azure](https://polite-coast-08bc95303.7.azurestaticapps.net) | (lokalt) |
 | **NDT Portalen** | `C:\Users\Johnn\Projects\ndt-portalen` | [portal.ndtoginsp.no](https://portal.ndtoginsp.no) | [NDT-Portal-v1](https://github.com/jekehaug-web/NDT-Portal-v1) |
 | **Galleri Uthuset** | `C:\Users\Johnn\Projects\galleri-uthuset` | [Streamlit](https://galleri-uthuset.streamlit.app) | [Galleri-Uthuset](https://github.com/jekehaug-web/Galleri-Uthuset) |
+| **MyLife** | `C:\Users\Johnn\Projects\mylife` | [Azure test](https://ca-mylife.livelyglacier-f5164960.norwayeast.azurecontainerapps.io) | [mylife](https://github.com/jekehaug-web/mylife) |
 
 ## Jobbe videre fra telefon
 
@@ -27,7 +28,8 @@
 | Se kode / PR | GitHub-app eller nettleser |
 | Teste Privatlærer | Azure-lenken (oppdateres med `npm run deploy:azure` på PC) |
 | Teste NDT | portal.ndtoginsp.no (deploy fra PC med ACA-skript) |
-| Synk mellom PC-er | **Git push/pull** — ikke stol bare på OneDrive for NDT/Galleri |
+| Teste MyLife | ca-mylife…azurecontainerapps.io (deploy: `.\scripts\azure\deploy-mylife.ps1`) |
+| Synk mellom PC-er | **Git push/pull** — ikke stol bare på OneDrive for NDT/Galleri/MyLife |
 
 ## Per prosjekt
 
